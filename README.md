@@ -1,6 +1,7 @@
 # kubernetes-wordpress-mysql
 
 First create key and certificate. Create a secret by using them:
+
 kubectl create secret tls ingress-tls --cert=ingress.crt --key=ingress.key
 
 kubectl create -f wordpress-home.yaml
